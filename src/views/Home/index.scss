@@ -1,0 +1,30 @@
+.home_box {
+    max-width: 1440px;
+    margin: 100px auto 0;
+    > .home_box_icon {
+        position: relative;
+        color: #00D7D7;
+        font-weight: 700;
+        font-size: 24px;
+        padding-left: 42px;
+        line-height: 30px;
+        margin-bottom: 26px;
+        &:after {
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            content: '';
+            width: 26px;
+            height: 26px;
+            background-image: url('../../assets/img/icon.png');
+            background-size: contain;
+        }
+    }
+    > .home_box_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-content: flex-start;
+    }
+}
