@@ -1,11 +1,9 @@
-import { ReactElement } from 'react'
+import { ReactElement, memo } from 'react'
 
 import './index.scss'
 
-export default (): ReactElement => {
-
-
+export default memo((): ReactElement => {
   return (
     <div className='skeleton'></div>
   )
-}
+})
